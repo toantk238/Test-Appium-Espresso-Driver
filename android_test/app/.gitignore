@@ -1,0 +1,7 @@
+/build
+# Manually build folder
+/sat
+/dev
+/prod
+/schemas/
+/doc/

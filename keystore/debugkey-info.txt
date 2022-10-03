@@ -1,0 +1,4 @@
+Password: android
+Hashkey: HAC+KfBtVEyVPYeica35ks5lv7U=
+SHA1 fingerprint: 1C:00:BE:29:F0:6D:54:4C:95:3D:87:A2:71:AD:F9:92:CE:65:BF:B5
+Alias: androiddebugkey

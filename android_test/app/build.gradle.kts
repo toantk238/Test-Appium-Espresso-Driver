@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    compileSdk = getIntProperty("appiumCompileSdk", 32)
+    compileSdk = getIntProperty("appiumCompileSdk", 33)
     buildToolsVersion = getStringProperty("appiumBuildTools", "32.0.0")
     defaultConfig {
         // <instrumentation android:targetPackage=""/>
@@ -110,15 +110,8 @@ dependencies {
     androidTestImplementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     androidTestImplementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     androidTestImplementation("androidx.compose.ui:ui-test:${composeVersion}")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:${composeVersion}") {
-        isTransitive = false
-    }
-
-    // additionalAndroidTestDependencies placeholder (don't change or delete this line)
-    androidTestImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4")
-    androidTestImplementation("androidx.compose.ui:ui-test-manifest:1.2.1")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("com.google.truth:truth:1.1.3")
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:${composeVersion}")
+    androidTestImplementation("androidx.compose.ui:ui-test-manifest:${composeVersion}")
 }
 
 configurations.all {
@@ -141,7 +134,7 @@ object Version {
     const val gson = "2.9.0"
     const val uia = "2.2.0"
     const val nanohttpd = "2.3.1"
-    const val annotation = "1.3.0"
+    const val annotation = "1.2.0"
     const val mockito = "4.0.0"
     const val robolectric = "4.5.1"
     const val junit = "4.13.2"

@@ -2,7 +2,7 @@
 
 buildscript {
     extra.apply {
-        set("appiumKotlin", properties.getOrDefault("appiumKotlin", "1.7.10"))
+        set("appiumKotlin", properties.getOrDefault("appiumKotlin", "1.7.20"))
         set(
             "appiumAndroidGradlePlugin",
             properties.getOrDefault("appiumAndroidGradlePlugin", "7.3.0")

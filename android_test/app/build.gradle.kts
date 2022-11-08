@@ -138,7 +138,7 @@ object Version {
     const val mockito = "4.0.0"
     const val robolectric = "4.5.1"
     const val junit = "4.13.2"
-    const val compose = "1.2.1"
+    const val compose = "1.3.0"
 }
 
 fun Project.getStringProperty(name: String, default: String): String =
